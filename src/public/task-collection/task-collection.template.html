@@ -2,6 +2,13 @@
   <div class="task-collection--container__inner">
     <label>Task Tracker</label>
     <div class="divider"></div>
+    <form
+      @submit="this.createTask($event)"
+      class="task-collection--container--inner__add-task"
+    >
+      <input v-model="this.taskAlias" type="text" placeholder="Task Alias" />
+      <button type="submit">Submit</button>
+    </form>
     <div
       class="task-collection--container--inner__tasks"
       v-if="this.isLoading === false"

@@ -13,6 +13,18 @@
       background-color: lightgray;
     }
 
+    .task-collection--container--inner__add-task {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+
+      input {
+        flex: 2;
+      }
+    }
+
     .task-collection--container--inner__tasks {
       display: flex;
       flex-direction: column;

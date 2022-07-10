@@ -20,11 +20,19 @@ export default class TaskCollectionService {
     return this._state$;
   }
 
+  public createTask(task: TaskEntity): void {
+    const data = this._state.value;
+
+    this._state.value.length = 0;
+    this._state.next([...data, task]);
+  }
+
   public updateTask(task: TaskEntity): void {
     this._state.value.map((data) => {
       if (data.uuid === task.uuid) {
         data.completed = task.completed;
       }
+
       return data;
     });
   }

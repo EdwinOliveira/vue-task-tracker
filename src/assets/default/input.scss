@@ -1,0 +1,12 @@
+input {
+  padding: 12px;
+  box-shadow: 0 0 12px 1.5px lightgray;
+  border: none;
+
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+input:focus {
+  outline: none;
+}
