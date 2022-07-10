@@ -1,0 +1,14 @@
+<div class="task-collection__container">
+  <div class="task-collection--container__inner">
+    <label>Task Tracker</label>
+    <div class="divider"></div>
+    <div
+      class="task-collection--container--inner__tasks"
+      v-if="this.isLoading === false"
+      v-for="(task, index) in this.tasks"
+      :key="index"
+    >
+      <app-task :task="task" @updateTask="this.updateTask"></app-task>
+    </div>
+  </div>
+</div>

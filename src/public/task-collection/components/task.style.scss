@@ -1,0 +1,12 @@
+.task__container {
+  padding: 20px;
+  box-shadow: 0 0 4px 0.5px lightgray;
+  border-radius: 8px;
+
+  .task--container__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

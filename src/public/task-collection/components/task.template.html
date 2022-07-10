@@ -1,0 +1,17 @@
+<div class="task__container">
+  <div class="task--container__inner">
+    <span>{{this.task.alias}}</span>
+    <font-awesome-icon
+      @click="this.updateTask(this.task)"
+      :style="{color: 'green'}"
+      v-if="this.task.completed === true"
+      icon="fa-solid fa-square-check"
+    />
+    <font-awesome-icon
+      @click="this.updateTask(this.task)"
+      :style="{color: 'red'}"
+      v-if="this.task.completed === false"
+      icon="fa-solid fa-square-xmark"
+    ></font-awesome-icon>
+  </div>
+</div>

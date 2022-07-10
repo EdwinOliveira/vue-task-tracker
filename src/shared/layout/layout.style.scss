@@ -1,0 +1,9 @@
+.layout__container {
+  min-height: 100vh;
+  width: 100vw;
+
+  .layout--container__inner {
+    min-height: inherit;
+    width: inherit;
+  }
+}
